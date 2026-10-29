@@ -22,7 +22,6 @@ const ALL_NAV_ITEMS: NavItemDef[] = [
   { id: 'recycling_hub', label: 'RECYCLING HUB' },
   { id: 'reconciliation', label: 'RECONCILIATION' },
   { id: 'chain_explorer', label: 'CHAIN EXPLORER' },
-  { id: 'audit_log', label: 'AUDIT LOG' },
 ];
 
 export const Sidebar: React.FC = () => {

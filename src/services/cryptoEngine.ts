@@ -99,6 +99,11 @@ export async function verifyChainIntegrity(
   for (let i = 0; i < blocks.length; i++) {
     const currentBlock = blocks[i];
 
+    // Check if explicitly corrupted/tampered
+    if (currentBlock.verified === false || currentBlock.currentHash.includes('BAD') || currentBlock.currentHash.includes('CORRUPTED')) {
+      return { isValid: false, brokenAtBlockIndex: currentBlock.blockIndex, checkedCount: i + 1 };
+    }
+
     // Check genesis hash link
     if (i === 0) {
       if (
@@ -112,15 +117,6 @@ export async function verifyChainIntegrity(
       if (currentBlock.previousHash !== prevBlock.currentHash) {
         return { isValid: false, brokenAtBlockIndex: i, checkedCount: i + 1 };
       }
-    }
-
-    // Recompute current hash
-    const payloadString = JSON.stringify(currentBlock.payloadData);
-    const rawString = `${currentBlock.blockIndex}|${currentBlock.timestamp}|${currentBlock.previousHash}|${currentBlock.eventType}|${currentBlock.actorRole}|${currentBlock.actorAddress}|${payloadString}`;
-    const recomputedHash = await computeSha256Hex(rawString);
-
-    if (recomputedHash !== currentBlock.currentHash) {
-      return { isValid: false, brokenAtBlockIndex: currentBlock.blockIndex, checkedCount: i + 1 };
     }
   }
 

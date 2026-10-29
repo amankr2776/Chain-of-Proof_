@@ -18,7 +18,6 @@ import { DispositionConsoleView } from './components/views/DispositionConsoleVie
 import { RecyclingHubView } from './components/views/RecyclingHubView';
 import { ReconciliationView } from './components/views/ReconciliationView';
 import { ChainExplorerView } from './components/views/ChainExplorerView';
-import { AuditLogView } from './components/views/AuditLogView';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -64,8 +63,6 @@ export default function App() {
         return <ReconciliationView />;
       case 'chain_explorer':
         return <ChainExplorerView />;
-      case 'audit_log':
-        return <AuditLogView />;
       default:
         return <DashboardView />;
     }

@@ -5,9 +5,9 @@
 
 export type UserRole =
   | 'manufacturer'
-  | 'repairer'
   | 'second_life'
   | 'recycler'
+  | 'repairer'
   | 'auditor'
   | 'regulator';
 
@@ -17,8 +17,7 @@ export type NavItemId =
   | 'disposition_console'
   | 'recycling_hub'
   | 'reconciliation'
-  | 'chain_explorer'
-  | 'audit_log';
+  | 'chain_explorer';
 
 export interface RoleConfig {
   id: UserRole;
