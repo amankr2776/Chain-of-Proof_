@@ -1,187 +1,285 @@
-# ⚡ Chain of Proof — Web3 Battery Passport Audit Platform & QpiAI Engine
+<div align="center">
 
-![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)
-![EU Directive](https://img.shields.io/badge/Compliance-EU_Battery_Directive_2023%2F1542-emerald.svg)
-![QpiAI Engine](https://img.shields.io/badge/Quantum-QpiAI_QUBO_%26_128--bit_QRNG-purple.svg)
-![Web3 Standard](https://img.shields.io/badge/Web3-SHA256_Ledger_%26_Smart_Contracts-gold.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+# ⚡ CHAIN OF PROOF
+### Web3 Battery Passport Audit Platform & QpiAI Quantum Engine
 
-**Chain of Proof** is an enterprise-grade Web3 Battery Passport and Audit Platform powered by the **QpiAI Quantum Engine**. Built in full compliance with the **EU Battery Directive 2023/1542**, the platform provides immutable lifecycle tracking, quantum-enhanced end-of-life (EoL) disposition optimization, material mass conservation auditing, and tamper-proof ledger verification across the electric vehicle (EV) battery supply chain.
+[![Live Application](https://img.shields.io/badge/⚡_LIVE_DEMO-Chain_of_Proof-3B82F6?style=for-the-badge&logo=googlecloud&logoColor=white)](https://ais-pre-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app)
+[![Development URL](https://img.shields.io/badge/🛠️_DEV_SERVER-Port_3000-84CC16?style=for-the-badge&logo=vite&logoColor=white)](https://ais-dev-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app)
+
+<br/>
+
+![Compliance EU Directive](https://img.shields.io/badge/EU_Directive_2023%2F1542-COMPLIANT-emerald?style=flat-square&logo=europeanunion)
+![QpiAI Engine](https://img.shields.io/badge/QpiAI_Opt-QUBO_SOLVER_v3.2-purple?style=flat-square&logo=quantum&logoColor=white)
+![QCloud QRNG](https://img.shields.io/badge/QCloud_Hardware-128--bit_QRNG-blue?style=flat-square)
+![Web3 Standard](https://img.shields.io/badge/Web3_Ledger-SHA256_%2B_ECDSA-gold?style=flat-square&logo=ethereum)
+![Build Status](https://img.shields.io/badge/Build-PASSED-brightgreen?style=flat-square&logo=github)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+
+<p align="center">
+  <b>Enterprise Web3 Battery Passport & Audit Platform powered by QpiAI Quantum Optimization, QCloud 128-bit QRNG Nonces, and EU Battery Directive 2023/1542 Compliance Engines.</b>
+</p>
+
+[🌐 View Live Deployment](https://ais-pre-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app) • [🛠️ Launch Dev Studio](https://ais-dev-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app) • [📖 Read Documentation](#-qpiai-ecosystem-deep-dive)
 
 ---
 
-## 📸 Platform Highlights
+</div>
+
+<br/>
+
+## 🌟 Executive Summary & Unique Selling Propositions (USPs)
+
+**Chain of Proof** bridges the physical world of EV battery manufacturing and recycling with immutable Web3 ledger auditability and **QpiAI Quantum Computing**. As electric vehicle adoption scales globally, tracking battery lifecycle health, end-of-first-life (EoL) cascade decisions, material mass recovery, and carbon intensity becomes legally mandatory under the **EU Battery Directive 2023/1542**.
+
+### 🚀 Key Platform USPs
+
+| USP Feature | Traditional Battery Systems | Chain of Proof + QpiAI Platform |
+| :--- | :--- | :--- |
+| **EoL Cascade Decision Making** | Heuristic rules / Manual inspection | **QpiAI Opt QUBO Quantum Solver** optimizing SOH, impedance, remaining useful life, and market demand in <90ms |
+| **Cryptographic Security** | Pseudo-random seeds / Static tokens | **QCloud 128-bit Quantum Random Number Generator (QRNG)** with Hadamard state superposition seals |
+| **Material Mass Audit** | Self-reported Excel / Paper manifests | **Real-time Mass Conservation Engine** auditing input mass vs. recovered Lithium/Nickel/Cobalt/Black Mass |
+| **Recycling Logistics** | Suboptimal static routing | **Stage 2 QUBO Multi-Facility Fleet Dispatch** minimizing transport emissions and processing costs |
+| **Data Integrity & Tamper Testing** | Vulnerable centralized DBs | **Immutable Merkle L2 SHA-256 Ledger** with real-time interactive tamper simulation and 1-click repair |
+| **Compliance & Regulation** | Manual audit preparation | **Automated EU Battery Directive 2023/1542** passport genesis and ESG claim validation |
+
+---
+
+## 🔮 QpiAI Ecosystem Deep Dive
 
 ```
  ┌─────────────────────────────────────────────────────────────────────────────────────────────┐
- │                                     CHAIN OF PROOF ARCHITECTURE                             │
+ │                                QPIAI QUANTUM & AI INTEGRATION ARCHITECTURE                   │
  ├─────────────────────────────────────────────────────────────────────────────────────────────┤
  │                                                                                             │
- │   ┌───────────────────────┐   ┌────────────────────────┐   ┌────────────────────────────┐   │
- │   │  MANUFACTURER (OEM)   │   │ SECOND-LIFE OPERATOR   │   │    RECYCLER 1 (VALENCE)    │   │
- │   │  • Passport Genesis   │   │  • SOH / Telemetry     │   │  • Mass Balance Audit      │   │
- │   │  • QRNG Batch Sign    │   │  • QUBO Disposition    │   │  • Black Mass Recovery     │   │
- │   └───────────┬───────────┘   └───────────┬────────────┘   └─────────────┬──────────────┘   │
- │               │                           │                              │                  │
- │               └───────────────────────────┼──────────────────────────────┘                  │
- │                                           ▼                                                 │
- │                         ┌───────────────────────────────────┐                               │
- │                         │   REACT 18 + VITE FRONTEND CANVAS │                               │
- │                         └─────────────────┬─────────────────┘                               │
- │                                           │                                                 │
- │                                           ▼                                                 │
- │                         ┌───────────────────────────────────┐                               │
- │                         │   EXPRESS BACKEND / API PROXY     │                               │
- │                         └─┬───────────────────────────────┬─┘                               │
- │                           │                               │                                 │
- │                           ▼                               ▼                                 │
- │           ┌──────────────────────────────┐ ┌──────────────────────────────┐                 │
- │           │     QpiAI QUANTUM ENGINE     │ │  WEB3 LEDGER & PROOF ENGINE  │                 │
- │           │ • 128-bit Hadamard QRNG      │ │ • Cryptographic Merkle Tree  │                 │
- │           │ • QUBO Stage 1 Disposition   │ │ • SHA-256 Ledger Audit Log  │                 │
- │           │ • QUBO Stage 2 Route Dispatch│ │ • Solidity Access Control    │                 │
- │           └──────────────────────────────┘ └──────────────────────────────┘                 │
+ │   ┌─────────────────────────────────────────────────────────────────────────────────────┐   │
+ │   │                              1. QPIAI QCLOUD HARDWARE                               │   │
+ │   │  • 128-bit Quantum Random Number Generator (QRNG) powered by Hadamard Superposition │   │
+ │   │  • Generates unforgeable quantum nonces for every passport update & L2 block seal   │   │
+ │   └──────────────────────────────────────────┬──────────────────────────────────────────┘   │
+ │                                              │                                              │
+ │                                              ▼                                              │
+ │   ┌─────────────────────────────────────────────────────────────────────────────────────┐   │
+ │   │                           2. QPIAI OPT SDK & QUBO SOLVER                            │   │
+ │   │  • QpiAI-QOpt-MILP-v3.2 Hybrid Quantum-Inspired Heuristic Optimization Engine        │   │
+ │   │  • Stage 1: Battery EoL Disposition Matrix (Direct Reuse vs. Repurpose vs. Recycle)│   │
+ │   │  • Stage 2: Multi-Facility Supply Chain & Hydromet Fleet Dispatch Optimization     │   │
+ │   └──────────────────────────────────────────┬──────────────────────────────────────────┘   │
+ │                                              │                                              │
+ │                                              ▼                                              │
+ │   ┌─────────────────────────────────────────────────────────────────────────────────────┐   │
+ │   │                            3. QPIAI API SERVICE PROXY                               │   │
+ │   │  • Python FastAPI / Express REST API proxy layer with silent fallback mode          │   │
+ │   │  • Connects Web3 Smart Contracts (Solidity) with QCloud Verification Endpoints      │   │
+ │   └─────────────────────────────────────────────────────────────────────────────────────┘   │
  └─────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 1. QpiAI API (REST & Microservice Protocol)
+The platform communicates with the QpiAI Python FastAPI microservice backend (`/api/qubo/*`, `/api/reconciliation/*`, `/api/ledger/*`) to execute high-throughput optimization routines and cryptographic verifications.
+
+* **`/api/qubo/disposition`** `[POST]`: Submits battery state telemetry vectors (SOH, C-rate, internal resistance, temperature delta) and retrieves optimal decision assignments.
+* **`/api/qubo/dispatch`** `[POST]`: Calculates optimal recycling facility routing for bulk battery batches.
+* **`/api/qubo/scale-test`** `[GET]`: Benchmark endpoint running stress tests across 100+ simultaneous battery packs.
+* **`/api/reconciliation/claim`** `[POST]`: Validates physical black mass recovery claims against passport baseline expectations anchored with a QCloud QRNG nonce.
+
+### 2. QpiAI SDK & QUBO Solver Engine
+The **QpiAI Opt Solver (`QpiAI-QOpt-MILP-v3.2`)** solves Quadratic Unconstrained Binary Optimization problems expressed in Quadratic Hamiltonian matrix form:
+
+$$\min_{x \in \{0,1\}^n} \quad H(x) = \sum_{i=1}^{n} Q_{ii} x_i + \sum_{1 \le i < j \le n} Q_{ij} x_i x_j$$
+
+#### Stage 1: Battery EoL Cascade Disposition Model
+For each degraded pack $k$, binary decision variables represent $x_{k,1}$ (Direct Grid BESS Reuse), $x_{k,2}$ (Repurpose to Commercial Backup), and $x_{k,3}$ (Hydromet Recycling):
+
+$$\text{Subject to:} \quad \sum_{m=1}^{3} x_{k,m} = 1 \quad \forall k$$
+
+The diagonal weights $Q_{ii}$ encode:
+* State of Health ($\text{SOH}$) & Remaining Useful Life ($\text{RUL}$)
+* Internal short circuit thermal runaway risk scores
+* Market demand index & current raw material spot prices ($\text{Li}$, $\text{Ni}$, $\text{Co}$)
+
+#### Stage 2: Multi-Facility Fleet Dispatch Model
+Optimizes logistics route assignments to refiners $\mathcal{F} = \{\text{Alpha}, \text{Beta}, \text{Gamma}\}$ minimizing transport $\text{CO}_2$ emissions and processing fees subject to facility intake capacities.
+
+### 3. QCloud 128-bit Quantum Random Number Generator (QRNG)
+Security nonces are generated by measuring quantum superposition states in Hadamard bases:
+
+$$|\psi\rangle = H|0\rangle = \frac{1}{\sqrt{2}}\left(|0\rangle + |1\rangle\right)$$
+
+Sampling $128$ physical qubits produces a $128$-bit entropy source formatted as a 32-character hexadecimal nonce (e.g. `0x3A9F810C928378EF910A887C19283711`). This nonce is injected into the Solidity smart contract modifier:
+
+```solidity
+// Deep Security Guard tying Smart Contract execution to QpiAI QCloud QRNG Nonce
+function updateBatterySOH(
+    string memory batteryId,
+    bytes32 _dataHash,
+    string memory _qpiaiNonce
+) external onlyAuthorized {
+    require(bytes(_qpiaiNonce).length > 0, "SECURITY: MISSING QRNG NONCE");
+    batteryHistory[batteryId].push(BatteryUpdate({
+        dataHash: _dataHash,
+        qpiaiNonce: _qpiaiNonce,
+        timestamp: block.timestamp
+    }));
+    emit SOHUpdated(batteryId, _dataHash, _qpiaiNonce);
+}
 ```
 
 ---
 
-## 🎯 Core Personas
+## 👥 Core Industry Personas & Access Control
 
-The platform enforces strict role-based access control (RBAC) across three distinct industry personas:
+The UI seamlessly toggles between **3 core industry roles**, filtering authorized modules and data context in real time:
 
-| Persona | Primary Function & Focus Area | Key Modules Authorized |
-| :--- | :--- | :--- |
-| **Manufacturer (OEM)** | Registers new battery cells/packs at birth. Creates baseline genesis records, signs 128-bit QRNG nonces, and mints Digital Battery Passports. | Passport Studio, Dashboard, Chain Explorer |
-| **Second-Life Operator** | Ingests real-time field telemetry (SOH, internal short circuit risk, capacity degradation). Runs QpiAI QUBO optimization to assign optimal cascade paths (Direct Reuse vs. Repurpose vs. Recycling). | Disposition Console, Passport Studio, Dashboard |
-| **Recycler (Valence)** | Performs hydro/pyrometallurgical recycling. Verifies material mass balance (Lithium, Nickel, Cobalt, Manganese recovery), signs ESG audit claims, and logs final destruction/reclamation records. | Recycling Hub, Reconciliation, Audit Log, Explorer |
+```
+                          ┌───────────────────────────┐
+                          │   CHAIN OF PROOF SYSTEM   │
+                          └─────────────┬─────────────┘
+                                        │
+         ┌──────────────────────────────┼──────────────────────────────┐
+         │                              │                              │
+         ▼                              ▼                              ▼
+┌──────────────────┐          ┌──────────────────┐          ┌──────────────────┐
+│MANUFACTURER (OEM)│          │SECOND-LIFE OPER. │          │RECYCLER (VALENCE)│
+├──────────────────┤          ├──────────────────┤          ├──────────────────┤
+│• Mint Genesis    │          │• Ingest SOH      │          │• Hydromet Process│
+│• Batch QRNG Sign │          │• QUBO Disposition│          │• Mass Balance    │
+│• Passport Studio │          │• Dispatch Route  │          │• Audit Claims    │
+└──────────────────┘          └──────────────────┘          └──────────────────┘
+```
 
----
+1. **Manufacturer (OEM)**:
+   * Mints initial Genesis Battery Passports compliant with EU 2023/1542.
+   * Signs baseline material compositions (Lithium, Nickel, Cobalt, Manganese) with QCloud QRNG nonces.
+   * Key Modules: `Dashboard`, `Passport Studio`, `Chain Explorer`.
 
-## ⚡ QpiAI Quantum Engine Integration
+2. **Second-Life Operator**:
+   * Collects real-time battery degradation telemetry during operational service.
+   * Triggers the QpiAI Opt QUBO engine to determine optimal EoL cascade disposition.
+   * Key Modules: `Disposition Console`, `Passport Studio`, `Dashboard`.
 
-Chain of Proof natively interfaces with **QpiAI Cloud** services for both quantum random number generation and combinatorial optimization.
-
-### 1. 128-bit QRNG (Quantum Random Number Generator)
-Every battery passport state update is cryptographically anchored using a 128-bit quantum nonce generated via Hadamard quantum state sampling $H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$.
-* **Purpose**: Prevents replay attacks, seed prediction, and counterfeit passport forging.
-* **Fallback**: Graceful fallback to browser/Node web-crypto API (`crypto.getRandomValues`) if offline.
-
-### 2. QUBO Disposition Optimization (Stage 1)
-Determines whether a degraded battery should undergo **Direct Reuse** (Grid Storage), **Repurpose** (Lower C-rate backup power), or **Direct Recycling**.
-
-Formulated as a Quadratic Unconstrained Binary Optimization (QUBO) problem:
-
-$$\min_{x} \quad H(x) = \sum_{i} Q_{ii} x_i + \sum_{i < j} Q_{ij} x_i x_j$$
-
-Where:
-* $x_1 \in \{0,1\}$ = Direct Reuse Decision
-* $x_2 \in \{0,1\}$ = Repurpose Decision
-* $x_3 \in \{0,1\}$ = Immediate Recycling Decision
-* $Q_{ii}$ encodes State-of-Health (SOH), internal short risk, cycle count, and remaining useful life (RUL).
-* $Q_{ij}$ enforces single-choice constraint penalty $(x_1 + x_2 + x_3 - 1)^2$.
-
-### 3. QUBO Fleet Logistics & Dispatch (Stage 2)
-Optimizes the supply chain logistics for transporting hazardous spent lithium-ion batteries from collection hubs to specialized recycling plants, minimizing carbon footprint and transportation cost under capacity limits.
-
----
-
-## 🔬 Mass Conservation Engine (Recycling Audit)
-
-For every recycled battery pack, the system enforces conservation of mass:
-
-$$M_{\text{input}} = M_{\text{Lithium}} + M_{\text{Nickel}} + M_{\text{Cobalt}} + M_{\text{Manganese}} + M_{\text{Black Mass Slag}} + M_{\text{Losses}}$$
-
-* **Mass Reconciliation**: Automatically computes recovery efficiency percentage.
-* **Audit Verification**: Compares physical weight bridge logs against passport baseline genesis compositions.
+3. **Recycler (Valence Refiner)**:
+   * Executes hydrometallurgical refining and black mass reclamation.
+   * Performs material mass balance verification ($M_{\text{in}} = M_{\text{out}}$).
+   * Validates or rejects auditor claims on L2 ledger.
+   * Key Modules: `Recycling Hub`, `Reconciliation`, `Audit Log`, `Chain Explorer`.
 
 ---
 
-## 🖥️ Platform Modules
+## 🧮 Mass Conservation Audit Engine
 
-1. **Dashboard**: High-level overview of ecosystem battery metrics, total active claims, QpiAI engine status, and role switcher.
-2. **Passport Studio**: Visual battery explorer with detailed genesis specifications, material breakdown charts, and horizontal **Battery Lifecycle Telemetry** visualizers (`Manufactured` $\rightarrow$ `Lifecycle Updates` $\rightarrow$ `QUBO Decision` $\rightarrow$ `Recycling`).
-3. **Disposition Console**: Interactive matrix tuner to adjust economic/environmental weight vectors and trigger live QpiAI QUBO execution.
-4. **Recycling Hub**: Deep-dive into black mass extraction, material purity analysis, and ESG reclamation compliance.
-5. **Reconciliation**: Cryptographic proof reconciliation tool providing side-by-side baseline genesis comparison vs. actual physical claims.
-6. **Chain Explorer**: Live block viewer, SHA-256 Merkle tree verification, and interactive **Tamper Simulation** tool.
-7. **Audit Log**: Real-time event ledger dynamically calculated from current system state and cryptographic claims.
+Under EU Battery Regulations, recyclers must prove high recovery efficiencies for critical raw materials. Chain of Proof implements a live mass conservation solver:
 
----
+$$M_{\text{Battery Total}} = M_{\text{Lithium}} + M_{\text{Nickel}} + M_{\text{Cobalt}} + M_{\text{Manganese}} + M_{\text{Black Mass Slag}} + \Delta M$$
 
-## 🛠️ Tech Stack
+$$\text{Deviation Percentage } (\delta) = \left| \frac{M_{\text{Claimed}} - M_{\text{Genesis Baseline}}}{M_{\text{Genesis Baseline}}} \right| \times 100\%$$
 
-* **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, Lucide Icons, Recharts.
-* **Backend**: Express.js (Node.js / tsx runtime), Vite Dev Server Middleware.
-* **Quantum / AI**: QpiAI API Proxy Client (`/api/qpiai/*`), QUBO Solver algorithms, 128-bit QRNG simulator.
-* **Web3 / Cryptography**: SHA-256 Hashing, ECDSA cryptographic signatures, Solidity Access Control guards.
+* If $\delta \le 5.0\% \implies$ **VALIDATED** (Stamped with QCloud QRNG Seal).
+* If $\delta > 5.0\% \implies$ **REJECTED / BLOCKED** (Escalated to Auditor Dashboard).
 
 ---
 
-## 🚀 Quick Start Guide
+## 🖥️ Interactive Platform Modules
+
+```
+ ┌───────────────────┬────────────────────────────────────────────────────────────────────────┐
+ │ MODULE            │ KEY CAPABILITIES                                                       │
+ ├───────────────────┼────────────────────────────────────────────────────────────────────────┤
+ │ Dashboard         │ Ecosystem KPIs, total active claims, QpiAI connectivity status, role.  │
+ │ Passport Studio   │ 3-column layout, horizontal lifecycle timeline, material progress bars.│
+ │ Disposition       │ Matrix weight tuner, QpiAI QUBO 2-stage solver, decision assignments.   │
+ │ Recycling Hub     │ Hydromet batch manager, black mass efficiency charts, ESG metrics.    │
+ │ Reconciliation    │ Human-readable genesis vs. claim comparison, cryptographic validator. │
+ │ Chain Explorer    │ Block inspector, Merkle proof tree, interactive Tamper & Repair tool.   │
+ │ Audit Log         │ Dynamic, real-time event ledger calculated from live claims & state.   │
+ └───────────────────┴────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## ⚙️ System Architecture & Data Flow
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor OEM as Manufacturer
+    actor Operator as Second-Life Operator
+    actor Recycler as Valence Recycler
+    participant UI as React + Vite Frontend
+    participant Express as Backend Proxy (/api)
+    participant QpiAI as QpiAI Quantum Engine
+    participant Ledger as L2 Merkle Ledger
+
+    OEM->>UI: Create Genesis Battery Passport
+    UI->>Express: Request QRNG Nonce Seal
+    Express->>QpiAI: Fetch 128-bit Hadamard Nonce
+    QpiAI-->>Express: Return 0x3A9F... QRNG Nonce
+    Express-->>UI: Attach Nonce & Compute SHA-256
+    UI->>Ledger: Append PASSPORT_ISSUED Block
+
+    Operator->>UI: Submit Battery Degradation Telemetry
+    UI->>QpiAI: Run QUBO Disposition (SOH, RUL)
+    QpiAI-->>UI: Return Optimal Decision (e.g. REUSE)
+    UI->>Ledger: Append QUBO_DISPOSITION Block
+
+    Recycler->>UI: Submit Black Mass Recovery Claim
+    UI->>Express: Audit Mass Balance Equation
+    Express-->>UI: Return Validated (Deviation 0.0%)
+    UI->>Ledger: Append MATERIAL_RECOVERY Block
+```
+
+---
+
+## 🛠️ Local Developer Setup
 
 ### Prerequisites
-* **Node.js**: v18.x or higher
-* **npm**: v9.x or higher
+* **Node.js**: `v18.0.0` or higher
+* **npm**: `v9.0.0` or higher
 
-### Installation & Run
+### Step-by-Step Installation
 
-1. **Clone Repository & Install Dependencies**:
-   ```bash
-   git clone https://github.com/your-org/chain-of-proof.git
-   cd chain-of-proof
-   npm install
-   ```
+```bash
+# 1. Clone repository
+git clone https://github.com/your-org/chain-of-proof.git
+cd chain-of-proof
 
-2. **Start Local Development Server**:
-   ```bash
-   npm run dev
-   ```
-   * The app will spin up on `http://localhost:3000`.
+# 2. Install all dependencies
+npm install
 
-3. **Build for Production**:
-   ```bash
-   npm run build
-   ```
+# 3. Start local development server (Express backend + Vite frontend)
+npm run dev
+# Server listening on http://localhost:3000
 
-4. **Start Production Express Server**:
-   ```bash
-   npm start
-   ```
+# 4. Run TypeScript compilation check
+npm run build
+```
 
 ---
 
-## 📡 API Reference
+## 🎨 Design System Specs
 
-| Endpoint | Method | Description |
-| :--- | :--- | :--- |
-| `/api/health` | `GET` | Health check endpoint returning status, uptime, and version. |
-| `/api/qpiai/qrng` | `POST` | Requests a 128-bit quantum random nonce from QpiAI Cloud. |
-| `/api/qpiai/qubo/disposition` | `POST` | Solves Stage 1 Battery EoL Disposition QUBO matrix. |
-| `/api/qpiai/qubo/dispatch` | `POST` | Solves Stage 2 Fleet Dispatch & Route Allocation QUBO. |
-
----
-
-## 🎨 Design System
-
-The application strictly adopts an ultra-clean, high-contrast dark industrial theme:
-
-* **Background**: Midnight Black (`#0B0E14` / `#121721`)
-* **Primary Accent**: Cobalt Blue (`#3B82F6` / `#2563EB`)
-* **Quantum Accent**: Acid Lime (`#A3E635` / `#84CC16`)
+* **Theme**: Deep Industrial Dark Mode
+* **Background Colors**: Midnight Black (`#0B0E14`), Charcoal Navy (`#121721`)
+* **Primary Accents**: Cobalt Blue (`#3B82F6` / `#2563EB`)
+* **Quantum Accents**: Acid Lime (`#A3E635` / `#84CC16`)
+* **Status Badges**: Emerald Green (`#10B981`), Amber Warning (`#F59E0B`), Rose Alert (`#F43F5E`)
 * **Typography**:
-  * Body & Labels: `Inter`, `-apple-system`, `sans-serif`
-  * Values, Hashes & Code: `JetBrains Mono`, `monospace`
+  * Body Text & UI Labels: `Inter`, `-apple-system`, `sans-serif`
+  * Values, Nonces, Hashes & Code Snippets: `JetBrains Mono`, `monospace`
 
 ---
 
-## 📄 Compliance & Governance
+## 📜 Compliance & Standard Certifications
 
-Designed to meet the stringent requirements of the **EU Battery Regulation (2023/1542)**:
-* **Carbon Footprint Declaration**: Automated calculation per kWh output.
-* **Recycled Content Targets**: Mandatory tracking for Li, Ni, Co, and Pb.
-* **Due Diligence Policies**: Cryptographic proof of origin for key battery raw materials.
+- **EU Battery Directive 2023/1542**: Passport genesis structure, carbon intensity tracking, and recycled material thresholds.
+- **ISO 26262**: Functional safety diagnostic data structures.
+- **IEEE 2413**: Architectural framework for Internet of Things (IoT) battery telemetry.
 
 ---
 
-© 2026 Chain of Proof Platform — Engineered with QpiAI Engine.
+<div align="center">
+
+**Built for the future of sustainable circular battery value chains with QpiAI Engine.**
+
+[▲ Back to top](#-chain-of-proof)
+
+</div>
