@@ -1,10 +1,17 @@
 <div align="center">
 
-# ⚡ CHAIN OF PROOF
-### Web3 Battery Passport Audit Platform & QpiAI Quantum Engine
+# ⚡ REMIX CHAIN OF PROOF
+### Enterprise Web3 EV Battery Passport, Disposition Optimization & QpiAI Engine
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=%E2%9A%A1+Role-Aware+EV+Battery+Digital+Passport;%F0%9F%AA8+QpiAI+QOpt-MILP-v3.2+QUBO+Optimization+Engine;%F0%9F%94%90+QCloud+128-bit+Hadamard+QRNG+Quantum+Nonces;%F0%9F%8D%83+EU+Battery+Directive+2023%2F1542+Compliance;%E2%9A%96%EF%B8%8F+Cryptographically+Audited+Material+Mass+Balance" alt="Chain of Proof Feature Typing Banner" />
+</p>
+
+<br/>
 
 [![Live Application](https://img.shields.io/badge/⚡_LIVE_DEMO-Chain_of_Proof-3B82F6?style=for-the-badge&logo=googlecloud&logoColor=white)](https://ais-pre-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app)
-[![Development URL](https://img.shields.io/badge/🛠️_DEV_SERVER-Port_3000-84CC16?style=for-the-badge&logo=vite&logoColor=white)](https://ais-dev-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app)
+[![Development URL](https://img.shields.io/badge/🛠️_DEV_STUDIO-Port_3000-84CC16?style=for-the-badge&logo=vite&logoColor=white)](https://ais-dev-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app)
+[![QpiAI API Cloudflare](https://img.shields.io/badge/🌐_QpiAI_FastAPI-Cloudflare_Tunnel-F43F5E?style=for-the-badge&logo=cloudflare&logoColor=white)](https://sir-shine-evanescence-relocation.trycloudflare.com)
 
 <br/>
 
@@ -15,11 +22,11 @@
 ![Build Status](https://img.shields.io/badge/Build-PASSED-brightgreen?style=flat-square&logo=github)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-<p align="center">
-  <b>Enterprise Web3 Battery Passport & Audit Platform powered by QpiAI Quantum Optimization, QCloud 128-bit QRNG Nonces, and EU Battery Directive 2023/1542 Compliance Engines.</b>
-</p>
+<br/>
 
-[🌐 View Live Deployment](https://ais-pre-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app) • [🛠️ Launch Dev Studio](https://ais-dev-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app) • [📖 Read Documentation](#-qpiai-ecosystem-deep-dive)
+> **Role-aware EV battery passport, disposition lifecycle tracking, and cryptographically verifiable material recovery audit platform powered by QpiAI Quantum Computing, QCloud 128-bit QRNG Nonces, and EU Battery Directive 2023/1542 Compliance Engines.**
+
+[🌐 View Live Deployment](https://ais-pre-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app) • [🛠️ Open Dev Studio](https://ais-dev-7yhp4py2j2cmcsfcthfx5x-121405157379.asia-southeast1.run.app) • [📖 Quantum Architecture](#-qpiai-ecosystem-deep-dive)
 
 ---
 
@@ -27,9 +34,9 @@
 
 <br/>
 
-## 🌟 Executive Summary & Unique Selling Propositions (USPs)
+## 🌟 Executive Overview & Unique Selling Propositions (USPs)
 
-**Chain of Proof** bridges the physical world of EV battery manufacturing and recycling with immutable Web3 ledger auditability and **QpiAI Quantum Computing**. As electric vehicle adoption scales globally, tracking battery lifecycle health, end-of-first-life (EoL) cascade decisions, material mass recovery, and carbon intensity becomes legally mandatory under the **EU Battery Directive 2023/1542**.
+**Remix Chain of Proof** bridges the physical world of EV battery manufacturing and recycling with immutable Web3 ledger auditability and **QpiAI Quantum Computing**. As electric vehicle adoption scales globally, tracking battery lifecycle health, end-of-first-life (EoL) cascade decisions, material mass recovery, and carbon intensity becomes legally mandatory under the **EU Battery Directive 2023/1542**.
 
 ### 🚀 Key Platform USPs
 
@@ -70,6 +77,7 @@
  │   │                            3. QPIAI API SERVICE PROXY                               │   │
  │   │  • Python FastAPI / Express REST API proxy layer with silent fallback mode          │   │
  │   │  • Connects Web3 Smart Contracts (Solidity) with QCloud Verification Endpoints      │   │
+ │   │  • Active Endpoint: https://sir-shine-evanescence-relocation.trycloudflare.com     │   │
  │   └─────────────────────────────────────────────────────────────────────────────────────┘   │
  └─────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -139,7 +147,7 @@ The UI seamlessly toggles between **3 core industry roles**, filtering authorize
          │                              │                              │
          ▼                              ▼                              ▼
 ┌──────────────────┐          ┌──────────────────┐          ┌──────────────────┐
-│MANUFACTURER (OEM)│          │SECOND-LIFE OPER. │          │RECYCLER (VALENCE)│
+│MANUFACTURER (OEM)│          │ SECOND LIFE OPER │          │RECYCLER (VALENCE)│
 ├──────────────────┤          ├──────────────────┤          ├──────────────────┤
 │• Mint Genesis    │          │• Ingest SOH      │          │• Hydromet Process│
 │• Batch QRNG Sign │          │• QUBO Disposition│          │• Mass Balance    │
@@ -152,7 +160,7 @@ The UI seamlessly toggles between **3 core industry roles**, filtering authorize
    * Signs baseline material compositions (Lithium, Nickel, Cobalt, Manganese) with QCloud QRNG nonces.
    * Key Modules: `Dashboard`, `Passport Studio`, `Chain Explorer`.
 
-2. **Second-Life Operator**:
+2. **Second Life Operator**:
    * Collects real-time battery degradation telemetry during operational service.
    * Triggers the QpiAI Opt QUBO engine to determine optimal EoL cascade disposition.
    * Key Modules: `Disposition Console`, `Passport Studio`, `Dashboard`.
@@ -161,7 +169,7 @@ The UI seamlessly toggles between **3 core industry roles**, filtering authorize
    * Executes hydrometallurgical refining and black mass reclamation.
    * Performs material mass balance verification ($M_{\text{in}} = M_{\text{out}}$).
    * Validates or rejects auditor claims on L2 ledger.
-   * Key Modules: `Recycling Hub`, `Reconciliation`, `Audit Log`, `Chain Explorer`.
+   * Key Modules: `Recycling Hub`, `Reconciliation`, `Chain Explorer`.
 
 ---
 
@@ -190,7 +198,6 @@ $$\text{Deviation Percentage } (\delta) = \left| \frac{M_{\text{Claimed}} - M_{\
  │ Recycling Hub     │ Hydromet batch manager, black mass efficiency charts, ESG metrics.    │
  │ Reconciliation    │ Human-readable genesis vs. claim comparison, cryptographic validator. │
  │ Chain Explorer    │ Block inspector, Merkle proof tree, interactive Tamper & Repair tool.   │
- │ Audit Log         │ Dynamic, real-time event ledger calculated from live claims & state.   │
  └───────────────────┴────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -202,7 +209,7 @@ $$\text{Deviation Percentage } (\delta) = \left| \frac{M_{\text{Claimed}} - M_{\
 sequenceDiagram
     autonumber
     actor OEM as Manufacturer
-    actor Operator as Second-Life Operator
+    actor Operator as Second Life Operator
     actor Recycler as Valence Recycler
     participant UI as React + Vite Frontend
     participant Express as Backend Proxy (/api)
@@ -280,6 +287,6 @@ npm run build
 
 **Built for the future of sustainable circular battery value chains with QpiAI Engine.**
 
-[▲ Back to top](#-chain-of-proof)
+[▲ Back to top](#-remix-chain-of-proof)
 
 </div>

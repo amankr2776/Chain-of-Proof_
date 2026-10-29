@@ -6,7 +6,6 @@ import express, { Request, Response } from 'express';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { createServer as createViteServer } from 'vite';
 import { executeQpiAiQuantumQRNG, solveQpiAiDispositionOpt, solveQpiAiDispatchOpt } from './src/services/qpiAiEngine';
 import {
   INITIAL_BATTERY_PASSPORTS,
@@ -22,7 +21,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = parseInt(process.env.PORT || '3000', 10);
 
 app.use(express.json());
 
@@ -469,6 +468,7 @@ async function startServer() {
   const isProd = process.env.NODE_ENV === 'production' || fs.existsSync(distPath);
 
   if (!isProd) {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
